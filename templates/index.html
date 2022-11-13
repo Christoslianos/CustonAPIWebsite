@@ -1,0 +1,32 @@
+{% extends 'bootstrap/base.html' %}
+
+
+{% block content %}
+
+
+  <body>
+   <div class="container-fluid ">
+<h1>{% block title %} Actual status of COVID-19 cases worldwide{% endblock %} </h1>
+  </div>
+  <div class="container-fluid">
+   <table class="table">
+   <tr>
+      <th scope="col">Date</th>
+      <th scope="col">Confirmed cases (Millions)</th>
+      <th scope="col">Confirmed deaths (Millions)</th>
+      <th scope="col">Fatality Rate %</th>
+    </tr>
+    <tr>
+      <td>{{date}} </td>
+      <td>{{confirmed_cases}} </td>
+      <td>{{deaths}} </td>
+        <td> {{fatality_rate}} </td>
+    </tr>
+</table>
+  </div>
+</body>
+{% endblock %}
+
+
+
+
